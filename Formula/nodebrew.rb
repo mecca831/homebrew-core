@@ -15,6 +15,10 @@ class Nodebrew < Formula
   end
 
   def caveats; <<-EOS.undent
+    After installation, run
+      nodebrew setup_dirs
+    to create directories required by nodebrew.
+    
     Add path:
       export PATH=$HOME/.nodebrew/current/bin:$PATH
 
